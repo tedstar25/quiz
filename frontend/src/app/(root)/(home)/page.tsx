@@ -15,7 +15,7 @@ const Home: FunctionComponent = () => {
 
 
 <div className='flex flex-col h-screen'>
-  <div className='h-1/5'>
+  <div className='h-[10%]'>
     <Header />
   </div>
 
@@ -24,15 +24,15 @@ const Home: FunctionComponent = () => {
         <Display />
     </div>
 
-    <div className='flex-grow h-2/5  overflow-hidden border-white-500'>
+    <div className='flex-grow h-3/5  overflow-hidden border-white-500'>
       <BackgroundGradientAnimation>
-        <div className=" text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+        <div className=" text-white font-bold px-4 pointer-events-none text-3xl text-center ">
           <Answers/>
         </div>
       </BackgroundGradientAnimation>
     </div>
 
-  <div className='h-1/5 border border-purple'>
+  <div className='h-[10%] border border-purple'>
     <Footer />
   </div>
 </div>
