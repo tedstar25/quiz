@@ -11,31 +11,30 @@ import Footer from '@/app/components/Section/Footer';
 
 const Home: FunctionComponent = () => {
   return (
-    <div className='aspect-w-1 aspect-h-2 border'>
+    <div className='aspect-w-1 aspect-h-2 border-red'>
 
 
-<div className='flex flex-col h-screen'>
-  <div className='h-[10%]'>
-    <Header />
-  </div>
+        <div className='flex flex-col h-screen'>
+            <div className='h-[10%]'>
+              <Header />
+            </div>
 
 
-    <div className='flex-grow h-1/5 '>
-        <Display />
-    </div>
+            <div className='flex-grow h-4/5 bg-purple  overflow-hidden border-white-500'>
 
-    <div className='flex-grow h-3/5  overflow-hidden border-white-500'>
-      <BackgroundGradientAnimation>
-        <div className=" text-white font-bold px-4 pointer-events-none text-3xl text-center ">
-          <Answers/>
+              <div className='flex-1'>
+                <Display />
+              </div>
+                <div className="flex-1 flex-end   text-white font-bold px-4  text-3xl text-center z-10 ">
+                  <Answers/>
+                </div>
+
+            </div>
+
+            <div className='h-[10%] border border-purple'>
+              <Footer />
+            </div>
         </div>
-      </BackgroundGradientAnimation>
-    </div>
-
-  <div className='h-[10%] border border-purple'>
-    <Footer />
-  </div>
-</div>
 
     </div>
 

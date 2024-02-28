@@ -1,7 +1,12 @@
+
 import Card from "../Card";
 
 
 const Answers: React.FC = () => {
+
+
+
+
   return (
     <div className="h-[60vh]">
 

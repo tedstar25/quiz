@@ -2,14 +2,14 @@
 import React, {useState} from "react";
 import { Button } from "./ui/moving-border";
 
-function MovingBorderButton() {
 
+interface MovingBorderButtonProps {
+  children: React.ReactNode;
+  onClick: () => void;
+  timer: number;
+}
 
-    const [timer, setTimer] = useState(1000000000);
-
-    const handleClick = () => {
-        setTimer(4000);
-      };
+function MovingBorderButton({ children, onClick, timer  }: MovingBorderButtonProps) {
 
 
 
@@ -17,15 +17,12 @@ function MovingBorderButton() {
     <div>
 
       <Button
-        onClick={handleClick}
+        onClick={onClick}
         borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 poin"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
         duration={timer}
-        
       >
-
-           d
-
+           {children}
       </Button>
 
     </div>
