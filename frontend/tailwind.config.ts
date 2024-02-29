@@ -25,6 +25,9 @@ module.exports = {
       },
     },
     extend: {
+      borderWidth: {
+        '3': '3px', 
+      },
 
       animation: {
         first: "moveVertical 30s ease infinite",
@@ -32,6 +35,9 @@ module.exports = {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        shimmer: "shimmer 2s linear infinite",
+
+        
       },
 
 
@@ -62,6 +68,7 @@ module.exports = {
         pink: "#ED5FBD",
         violet: "#F16565",
         orange: "#FF964B",
+        red: '#EF4444',
       },
 
       keyframes: {
@@ -106,6 +113,14 @@ module.exports = {
             transform: "translateY(-50%)",
           },
         },
+        shimmer: {
+          from: {
+            "backgroundPosition": "0 0"
+          },
+          to: {
+            "backgroundPosition": "-200% 0"
+          }
+        }
       },
 
     },

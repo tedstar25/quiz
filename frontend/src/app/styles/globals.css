@@ -6,3 +6,9 @@
 html, body {
   overflow: hidden;
 }
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
