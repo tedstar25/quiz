@@ -51,7 +51,7 @@ const Yourfield: React.FC = () => {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-0 bg-purple h-full">
         {exampledata.answers.map((answer: string, index: number) => (
-          <div key={index} className="p-2 sm:p-4 sm:mx-6 md:p-6 flexcenter ">
+          <div key={index} className="p-2 sm:p-4 sm:px-6 md:p-6 flexcenter ">
               <Answercard answer={answer} />
           </div>
         ))}
